@@ -1,155 +1,217 @@
-
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Wanderly Travel</title>
+    <link href="style.css" rel="stylesheet">
+
 </head>
 
+
 <body>
-
     <header>
-
-        <div class="container">
-            <h1 class="logo"><span>Wanderly</span>
-            </h1>
-
-            <nav>
-                <div class="menu-icon">&#9776;</div>
-
-                <ul class="nav-list">
-                    <li>Discover</li>
-                    <li>Destinations</li>
-                    <li>Stays</li>
-                    <li>Experiences</li>
-                    <li>Services</li>
-                    <li>Contact</li>
-                </ul>
+        <h1 class="logo ">Wanderly</h1>
+        <nav>
+            <ul>
+                <li>Discover</li>
+                <li>Destinations</li>
+                <li>Stays</li>
+                <li>Experiences</li>
+            </ul>
+            <div class="search-button">
+             <span>list your property</span>
+             <button>Sign in</button>
+             </div>
             </nav>
-        </div>
 
-
-        <div class="hero-section">
-
-            <div class="content_wrapper">
-                <h1>Discover The Extraordinary</h1>
-                <p>Curated Journey For The Sophisticated Explorer</p>
-            </div>
 
     </header>
-    <form action="">
+    <section class="hero">
+        <div class="hero-services">
+            <h1>Discover The Extraordinary</h1>
+            <p>Curated Journey for the sophisticated explorer</p>
+        
+          
+        <div class="search-box">
+            <div>Destination</div>
+            <input type="text" placeholder="where do you want to go">
+            </div>
+        <div class="search-box">
+            <div>Trip Type</div>
+            <select>
+                <option>Select type</option>
+            </select>
+            </div>
+       <div class="search-box">
+            <div>Dates</div>
+            <input type="date" >
+            </div>
+        
+         <div class="search-box">
+            <div>Guests</div>
+            <input type="text" placeholder="Add Guests">
+            </div>
 
-                <div class="search-item">
-                    <div>Destination</div>
-                    <input type="text" placeholder="Ex: Hotels, Tour...">
-                </div>
-
-                <div class="search-item">
-                    <div>Trip Type</div>
-                    <input type="text" placeholder="Select type">
-                    
-                </div>
-
-                <div class="search-item">
-                    <div>Date</div>
-                    <input type="date">
-                </div>
-
-                <div class="search-item">
-                    <div>Guests</div>
-                    <input type="text" placeholder="Add guests">
-            
-                </div>
-
-                <div class="search-item">
-                    <button class="search_btn" type="submit">
-                        Search
-                    </button>
-                </div>
-            </form>
         </div>
-     <section class="services destination">
-     <h1>Popular Destinations</h1>
-     <h5>Curated locations for the Sophisticated explorer</h5>
-     
-     <div class="row">
-        <div class="destination-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzOqaTUMKTF44q0OL9ydDhu5AOe_hH27OKXuHwaZASullX2sIN0n2CWkg&s=10" alt="">
-             <h2>Amalfi Coast</h2>
-             <p>Experience the dramatic coastlinepastel-colored villages , and lemon groves of southern....</p>
-              <a href="#">from &dollar;1500</a>
-        
-      </div>
-      
-        <div class="destination-card">
-            <img src="https://substackcdn.com/image/fetch/$s_!WDBx!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4408754a-fcbe-4b97-89ca-1df5b339f5f0_2048x1543.jpeg" alt="">
-             <h2>Kyoto</h2>
-             <p>Discover ancient temples,traditional tea houses,and tranquil bamboo forests</p>
-              <a href="#">from &dollar;1200</a>
-        
-      </div>
+        </section>
+    <section class="stats">
+        <div>
+            <h2>150+</h2>
+            <p>Destinations</p>
+            </div>
+            <div>
+                <h2>4.9</h2>
+                <p>average ratings</p>
+                </div>
+            <div>
+                <h2>24/7</h2>
+                <p>Support</p>
+            </div>
+            <div>
+                <h2>50k+</h2>
+                <p>Happy Travellers</p>
+                </div>
+            </section>
 
-        <div class="destination-card">
-            <img src="https://i.natgeofe.com/n/c69de239-9c4b-454e-a411-f51b322e5c16/Haslital_square.jpg" alt="">
-             <h2>Swiss Alps</h2>
-             <p>Immerse yourself in breathtaking alpine scenery and luxury winter retreats</p>
-              <a href="#">from &dollar;1600</a>
-        
-      </div>
+            <section class="Destinations">
+                <h2>Popular Destinations</h2>
+                    <p>Curated locations for sophisticated explorer</p>
 
-        <div class="destination-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX12-hJKPhHi6GtgUx8DyWDw16dPhpH73QmY66yjcg5wJSw9MA1eykgsvz&s=10" alt="">
-             <h2>Santorini </h2>
-             <p>Iconic whiteashed buildings overlooking the deep blue Aegean Sea</p>
-              <a href="#">from &dollar;2000</a>
-        
-      </div>
-    
-        <div class="destination-card">
-            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/b9/ee/23/caption.jpg?w=1400&h=-1&s=1" alt="">
-             <h2>Bali</h2>
-             <p>Lush jungles, vibrant culture, and serene wellness retreats</p>
-              <a href="#">from &dollar;950</a>
-        
-      </div>
-    
-        <div class="destination-card">
-            <img src="https://pictures.altai-travel.com/1920x0/lakes-in-patagonian-national-park-shutterstock-2344.jpg" alt="">
-            
-             <h2>Patagonia</h2>
-             <p>Untamed wilderness,dramatic glaciers and awe-inspiring landscapes</p>
-              <a href="#">from &dollar;2500</a>
-        
-      </div>
-      
-    </section>
+                <div class="destination-container">
+                    <div class="destination-card">
+                        <img src="images/Amalfi Coast.jpg">
+                        <h3>Amalfi Coast</h3>
+                        <p>Italy</p>
+                        <span>From$1500</span>
+                        </div>
+                    <div class="destination-card">
+                        <img src="images/Kyoto.png">
+                        <h3>Kyoto</h3>
+                        <p>Japan</p>
+                        <span>From$2000</span>
+                        </div>
+                    <div class="destination-card">
+                        <img src="images/Swiss Alps.jpg">
+                        <h3>Swiss Alps</h3>
+                        <p>Switzerland</p>
+                        <span>From$2100</span>
+                        </div>
+                    <div class="destination-card">
+                        <img src="images/Santorini.jpg">
+                        <h3>Santorini</h3>
+                        <p>Greece</p>
+                        <span>From$3000</span>
+                        </div>
+                    <div class="destination-card">
+                        <img src="images/Bali.jpg">
+                        <h3>Bali</h3>
+                        <p>Indonesia</p>
+                        <span>From$2400</span>
+                        </div>
+                    <div class="destination-card">
+                        <img src="images/Patagonia.jpg">
+                        <h3>Patagonia</h3>
+                        <p>Chile</p>
+                        <span>From$2200</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="why-wanderly">
+                    <h2>Why Wanderly</h2>
+                    <div class="Why-container">
+                        <div>
+                            <h4>Curated Experiences</h4>
+                            <p>Hand-picked stays and exclusive access.</p>
+                        </div>
+                        <div>
+                            <h4>Local Expertise</h4>
+                            <p>Insider knowledge and on-the-ground guidance</p>
+                            </div>
+                            <div>
+                                <h4>Flexible Booking</h4>
+                                <p>Travel with peace of mind and flexible options</p>
+                                </div>
+                                </div>
+                                </section>
+                            <section class="Seasonal">
+                                <div class="season-card">
+                                    <h2>Summer Escape: Luxury in the Aegean</h2>
+                                    <button>Explore Collection</button>
+                                    </div>
+
+                                    <div class="season-card">
+                                        <h2>Winter Retreat: alpine serenity</h2>
+                                        <button>Explore collection</button>
+                                        </div>
+
+                                    <section class="reviews">
+                                        <h2>What Explorers Says</h2>
+                                        <div class="review-card">
+                                            <p>stars</p>
+                                            <p>"Our honeymoon was an incredible experience. Everything was beautifully organized"</p>
+                                            <h4>Sarah Jenkins</h4>
+                                            <small>Traveler from UK</small>
+                                            </div>
+
+                                            <div class="review-card">
+                                                <p>5 stars</p>
+                                                <p>"Wanderly made our trip simple and memorable from beginning to end"</p>
+                                                <h4>Michael chen</h4>
+                                                <small>Traveler from USA</small>
+                                                </div>
+
+                                            </div>
+                                            </section>
+
+                                            <section class="newsletter">
+                                                <h2>Never miss a destination</h2>
+                                                <p>Sign up for our newsletter to  recieve travel Inspiration,
+                                                    exclusive offers and curated stories 
+                                                </p>
+                                                <input type="email" placeholder="Your email address">
+                                                <button>Subscribe</button>
+
+                                                </section>
 
 
-            
-        </div>
-    
-    <section class="services">
-     <h1>Why Wanderly</h1>
+                                         <footer>
+                                            <div>
+                                                <h2>Wanderly</h2>
+                                                <p>Curating the world's most extraordinary travel experiences </p>
+                                                </div>
 
-     <div class="row">
-        <div class="col">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ20dZsHBjl0wHPtfzpnafElsdgq9jOAU5nzN9IpsjaO8G1Nk6oKlaI-oh&s=10" alt="">
-             <h2> Summer Escape: Luxury in the Aegean</h2>
-        </div>
-         <div class="col">
-            <img src="https://th-thumbnailer.cdn-si-edu.com/EuVUCxvM9jU-JC8TVJ8WC7N1PkU=/fit-in/1600x0/filters:focal(1111x868:1112x869)/https://tf-cmsv2-journeys-media.s3.amazonaws.com/filer/52/51/52519879-1560-4e02-b0f1-e5062038e7b9/arg_losglaciaresnp_peritomorenoglacier_ist_867132920.jpg" alt="">
-             <h2>Winter Retreat: Alpine Serenity</h2>
-        </div>
-     </div>
-     </section>
+                                                <div>
+                                                    <h3>Explore</h3>
+                                                    <p>Destinations</p>
+                                                    <p>Stays</p>
+                                                    <p>Experience</p>
+                                                    <p>Travel Guide</p>
+                                                </div>
+                                                <div>
+                                                    <h3>Company</h3>
+                                                    <p>About Us</p>
+                                                    <p>Careers</p>
+                                                    <p>Press</p>
+                                                    <p>Blog</p>
+                                                </div>
+                                                <div>
+                                                    <h3>Supports</h3>
+                                                    <p>Help Center</p>
+                                                    <p>contact us</p>
+                                                    <p>Cancellation</p>
+                                                    <p>Safety Information</p>
+                                                    </div>
+                                                <div>
+                                                    <h3>Links</h3>
+                                                    <p>Instagram</p>
+                                                    <p>Facebook</p>
+                                                    <p>Twitter</p>
+                                                    <p>Pinterest</p>
+                                                    </div>
 
-    <footer>
-        <p>@2026 Wanderly Travel. All Right Reserved  </p>
-    </footer>
-
-    
-
-</body>
-</html>
+                                                    </footer>
+                                                    </body>
+                                                    </html>
+  
+              
