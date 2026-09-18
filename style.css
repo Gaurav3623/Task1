@@ -5,356 +5,370 @@
 }
 
 body {
-    font-family:  sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #35463f;
 }
-
 header {
-    height: 80px;
-    width: 100%;
-    padding: 0 70px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    background-color: #ffffff;
+    padding: 20px 8%;
+    background-color: white;
 }
-
 .logo {
-    font-family:serif;
-    font-size: 30px;
-    font-weight: 500;
-    color: #000504;
+    font-size: 28px;
 }
-
 nav {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
 }
-
 nav ul {
     display: flex;
     align-items: center;
     gap: 35px;
     list-style: none;
 }
-
 nav ul li {
     font-size: 14px;
     color: #35463f;
     cursor: pointer;
 }
-
-
 .search-button {
     display: flex;
     align-items: center;
     gap: 25px;
 }
-
 .search-button span {
     font-size: 13px;
     color: #4c5954;
     cursor: pointer;
     text-transform: capitalize;
 }
-
 .search-button button {
     padding: 11px 22px;
     border: none;
     border-radius: 4px;
     background-color: #c49a36;
-    color: dk rgb(181, 40, 40);
+    color: white;
     font-size: 13px;
     cursor: pointer;
 }
-.hero{
+.hero {
     height: 500px;
+    background-image: url("images/Amalfi\ Golden\ Hour.jpg");
     background-position: center;
-    background-image: url(images/Amalfi\ Golden\ Hour.jpg);
+    background-size: cover;
+
     display: flex;
     justify-content: center;
-     align-items: center;
-     text-align: center;
+    align-items: center;
+
+    text-align: center;
 }
-.hero-services{
+.hero-services {
     color: #ffffff;
     width: 90%;
 }
-.hero-services h1{
+.hero-services h1 {
     font-size: 50px;
     margin: 20px 0 10px;
 }
-.hero-services p{
+.hero-services > p {
     font-size: 15px;
 }
-.search-box{
-  width: 800px;
-  margin:35px auto 0;
-  padding:15px;
-  background-color: #080205;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  text-align: left;
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 35px;
 }
-.search-box div{
-    flex:1;
-    
-
+.search-box {
+    width: 190px;
+    padding: 15px;
+    background-color: #080205;
+    border-radius: 10px;
+    text-align: left;
 }
-.search-box input{
+.search-box label {
     display: block;
-    font-size: 10px;
-    font-weight:500;
-    color:#d4d2d2;
-    margin-bottom:6px;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 8px;
 }
 .search-box input,
-.search-box select{
+.search-box select {
     width: 100%;
+    padding: 8px;
     border: none;
     outline: none;
     background-color: aliceblue;
     font-size: 12px;
-} 
-.search-box button{
+}
+.search-box button {
     border: none;
     background-color: #d8b52c;
-    padding:12px 20px;
+    padding: 12px 20px;
     border-radius: 6px;
     cursor: pointer;
 }
-
-.stats{
+.stats {
     background-color: white;
-    padding-bottom: 30px 8%;
+    padding: 30px 8%;
+
     display: flex;
     justify-content: space-around;
+
     text-align: center;
 }
-
-.stats h2{
+.stats h2 {
     font-size: 22px;
-    margin-bottom:6px;
-
+    margin-bottom: 6px;
 }
-.stats p{
+.stats p {
     font-size: 12px;
-    color:#777;
+    color: #777;
+}
+.destinations {
+    padding: 70px 8%;
 }
 
-.Destinations{
-    padding: 70px 8%;
-    justify-content: space-between;
-}
-.Destinations h2{
+.destinations h2 {
     font-size: 32px;
     margin-bottom: 10px;
-
 }
-.Destinations p{
-    color:#777;
+
+.destinations > p {
+    color: #777;
     margin-bottom: 35px;
 }
-.destination-container{
+.destination-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
-.destination-card{
+.destination-card {
     background-color: #ffffff;
     border-radius: 12px;
     overflow: hidden;
     padding-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
-.destination-card img{
+
+.destination-card img {
     width: 100%;
     height: 220px;
     object-fit: cover;
-
 }
-.destination-card h3{
+
+.destination-card h3 {
     margin: 15px 18px 5px;
     font-size: 21px;
 }
-.destination-card p{
+.destination-card p {
     margin: 5px 18px;
-    color:#777;
+    color: #777;
 }
-.destination-card span{
-    display:block;
+.destination-card span {
+    display: block;
     margin: 15px 18px 0;
     font-weight: bold;
     font-size: 15px;
 }
-.why-wanderly{
+.why-wanderly {
     padding: 60px 8%;
     background-color: #f5f5f5;
     text-align: center;
-
 }
-.why-wnderly h2{
+.why-wanderly h2 {
     font-size: 32px;
     margin-bottom: 40px;
-
 }
-.why-container{
+.why-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-
 }
-.why-container div{
+.why-container div {
     background-color: white;
     padding: 30px;
     border-radius: 12px;
-
 }
-.why-container h4{
+.why-container h4 {
     font-size: 20px;
     margin-bottom: 12px;
-
 }
-.why-container p{
+.why-container p {
     color: #777;
     line-height: 1.5;
-
 }
-.seasonal{
+.seasonal {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
-    padding:60px 8%;
-
+    padding: 60px 8%;
 }
-.season-card{
+.season-card {
     min-height: 280px;
     padding: 35px;
+
     border-radius: 15px;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+
     color: white;
+
     background-size: cover;
     background-position: center;
-
 }
-.season-card:first-child{
+.season-card:first-child {
     background-image: url("images/Summer\ Escape.jpg");
-
 }
-.season-card:last-child{
+.season-card:last-child {
     background-image: url("images/Winter\ Retreat.jpg");
 }
-.season-card h2{
+.season-card h2 {
     font-size: 26px;
     margin-bottom: 20px;
-
 }
-.season-card button{
+.season-card button {
     width: fit-content;
-    padding:12px 20px;
+    padding: 12px 20px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
 }
-
-.reviewa h2{
+.reviews {
+    padding: 60px 8%;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+.reviews h2 {
     font-size: 32px;
     margin-bottom: 35px;
-
 }
-.review-container{
+.review-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
 }
-.review-card{
+.review-card {
     background-color: white;
     padding: 30px;
     border-radius: 12px;
     text-align: left;
-
 }
-.review-card p:first-child{
+.review-card p:first-child {
     margin-bottom: 15px;
-
 }
-.review-card p:nth-child{
-    color:#555;
+.review-card p:nth-child(2) {
+    color: #555;
     line-height: 1.6;
 }
-.review-card h4{
+.review-card h4 {
     margin-top: 20px;
     margin-bottom: 5px;
-
 }
-.review-card small{
-    color:white;
+.review-card small {
+    color: #777;
 }
-.newsletter{
+.newsletter {
     padding: 60px 20px;
     text-align: center;
+
     background-color: #222;
     color: #ffffff;
 }
-.newsletter p{
+.newsletter p {
     color: #ccc;
     margin-bottom: 25px;
 }
-.newsletter input{
+.newsletter input {
     width: 300px;
     padding: 14px;
+
     border: none;
     border-radius: 5px;
     outline: none;
 }
-.newsletter button{
+
+.newsletter button {
     padding: 14px 22px;
     margin-left: 8px;
+
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
-footer{
+footer {
     display: grid;
-    grid-template-columns: 2fr repeat(4,1fr);
+    grid-template-columns: 2fr repeat(4, 1fr);
+
     gap: 35px;
     padding: 60px 8%;
+
     background-color: #111;
     color: white;
 }
-footer h2,footer h3{
+footer h2,
+footer h3 {
     margin-bottom: 15px;
-
 }
-footer p{
+footer p {
     color: #aaa;
     margin-bottom: 10px;
     font-size: 14px;
 }
-@media screen (max-width:600px){
+@media screen and (max-width: 600px) {
+   header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .hero {
+        height: auto;
+        min-height: 600px;
+    }
+    .hero-services h1 {
+        font-size: 35px;
+    }
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .search-box {
+        width: 90%;
+    }
     .destination-container,
     .why-container,
-    .review-container{
-        grid-template-columns:1fr;
+    .review-container,
+    .seasonal {
+        grid-template-columns: 1fr;
     }
-    .stats{
+    .stats {
         flex-wrap: wrap;
-        gap:30px;
-
+        gap: 30px;
     }
-    .newsletter input{
+    .newsletter input {
         width: 80%;
         margin-bottom: 10px;
-
     }
-    .newsletter button{
+    .newsletter button {
         margin-left: 0;
     }
-    footer{
+     footer {
         grid-template-columns: 1fr;
     }
 }
